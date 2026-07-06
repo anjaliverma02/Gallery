@@ -10,11 +10,11 @@ let currentImage = 0;
 document.getElementById("galleryImage").src = images[currentImage];
 
 function nextImage() {
-    currentImage = (currentImage + 1) % images.length; // cleaner way to loop
+    currentImage = (currentImage + 1) % images.length; // loop
     document.getElementById("galleryImage").src = images[currentImage];
 }
 
 function previousImage() {
-    currentImage = (currentImage - 1 + images.length) % images.length; // cleaner way to loop back
+    currentImage = (currentImage - 1 + images.length) % images.length; // loop back
     document.getElementById("galleryImage").src = images[currentImage];
 }
