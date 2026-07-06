@@ -16,11 +16,33 @@ body {
     border-radius: 10px;
 }
 
-.gallery img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+}
+
+.gallery {
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
     border-radius: 10px;
+}
+
+#galleryImage {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+button {
+    margin: 15px 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 button {
