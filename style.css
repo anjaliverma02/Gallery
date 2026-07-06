@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .gallery {
@@ -19,6 +20,11 @@ body {
     background: #222;
     padding: 20px;
     border-radius: 10px;
+    color: white;
+}
+
+.gallery h2 {
+    margin-bottom: 15px;
 }
 
 #galleryImage {
@@ -38,4 +44,8 @@ button {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+}
+
+button:hover {
+    background: #45a049;
 }
