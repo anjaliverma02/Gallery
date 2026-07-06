@@ -1,35 +1,41 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
+    background: #111;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #eeeeee;
+    min-height: 100vh;
 }
 
 .gallery {
-    width: 500px;
-    padding: 15px;
+    width: 90%; /* screen ka 90% lega */
+    max-width: 600px; /* 600px se badi nahi hogi */
     text-align: center;
-    background-color: white;
+    background: #222;
+    padding: 20px;
     border-radius: 10px;
 }
 
 #galleryImage {
-    display: block;
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
+    width: 100%; /* gallery ke andar fit */
+    height: 350px; /* height fix */
+    object-fit: contain; /* pura image dikhega, crop nahi hoga */
     border-radius: 8px;
+    background: black; /* khali jagah black dikhegi */
 }
 
 button {
-    margin: 15px 4px 0;
-    padding: 8px 15px;
+    margin: 15px 5px 0;
+    padding: 10px 25px;
     cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
